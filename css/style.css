@@ -1,0 +1,34 @@
+body {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background: #000;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-bg {
+  position: absolute;
+  width: 40%;
+  height: 50rem;
+  background: #AB0F50;
+}
+
+.top-img {
+  margin-left: auto;
+  width: 70%;
+  height: 500px;
+  background: url("../image/top-image.jpg");
+  position: relative;
+}
+
+.top-img::after {
+  content: "";
+  background: #AB0F50;
+  position: absolute;
+}

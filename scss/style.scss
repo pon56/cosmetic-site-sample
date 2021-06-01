@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+$breakpoints: (
+    "sm": "(max-width:767px)",
+    "md": "(min-width: 768px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// fonts
+$top-title-font:'Pinyon Script', cursive;
+$bodyfont:'Playfair Display', serif;
+
+// Colors
+$primary-color: #AB0F50;
+
+// 共通スタイル
+body {
+    font-family: $bodyfont;
+}
+
+// header
+header{
+    background: #000;
+}
+
+.header-inner{
+    display:flex;
+}
+
+// top
+.top-bg{
+    position: absolute;
+    width: 40%;
+    height: 50rem;
+    background: $primary-color;
+}
+
+.top-img{
+    margin-left: auto;
+    width: 70%;
+    height: 500px;
+    background: url("../image/top-image.jpg");
+    position: relative;
+
+    &::after{
+        content: "";
+        background: $primary-color;
+        position: absolute;
+    }
+}
+
