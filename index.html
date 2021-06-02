@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -54,40 +55,47 @@
         <!-- top -->
         <div class="top">
             <div class="top-img">
-            <div class="top-text">
-                <h1>Rose rose</h1>
-                <h2>Cool and Elegance</h2>
+                <div class="top-text">
+                    <h1>Rose rose</h1>
+                    <h2>Cool and Elegance</h2>
+                </div>
             </div>
         </div>
-        </div>
 
+        <!-- pick-Up -->
         <section class="pick-up" id="pickUp">
-            <div class="pick-up-title">
-                <h2>Pick Up Items</h2>
+            <div class="pick-up-title-container">
+                <h2 class="pick-up-title">Pick Up Items</h2>
             </div>
             <div class="pick-up-content">
                 <div class="pick-up-item">
-                    <div class="pick-img-left">
-                        <img src="./image/woman1.jpg" alt="woman1">
-                    </div>
-                    <div class="pick-img-right">
-                        <img src="./image/pick-lip.jpg" alt="pick-item1">
-                    </div>
-                </div>
-                <div class="pick-up-item">
-                    <div class="pick-img-left">
-                        <img src="./image/picke-shadow.jpg" alt="woman1">
-                    </div>
-                    <div class="pick-img-right">
-                        <img src="image/woman2.jpg" alt="pick-item1">
+                    <img class="pick-img" src="./image/woman1.jpg" alt="woman1">
+                    <div class="pick-up-text-container">
+                        <img class="pick-img" src="./image/pick-lip.jpg" alt="pick-item1">
+                        <div class="pick-up-text">
+                            <p>useItem</p>
+                            <a href="#">lip-TrueRose-01</a>
+                        </div>
                     </div>
                 </div>
                 <div class="pick-up-item">
-                    <div class="pick-img-left">
-                        <img src="./image/woman3.jpg" alt="woman1">
+                    <div class="pick-up-text-container">
+                        <img class="pick-img" src="./image/picke-shadow.jpg" alt="woman1">
+                        <div class="pick-up-text">
+                            <p>useItem</p>
+                            <a href="#">shadow-MaryGold-02</a>
+                        </div>
                     </div>
-                    <div class="pick-img-right">
-                        <img src="./image/pick-lip1.jpg" alt="pick-item1">
+                    <img class="pick-img" src="image/woman2.jpg" alt="pick-item1">
+                </div>
+                <div class="pick-up-item">
+                    <img class="pick-img" src="./image/woman3.jpg" alt="woman1">
+                    <div class="pick-up-text-container">
+                        <img class="pick-img" src="./image/pick-lip1.jpg" alt="pick-item1">
+                        <div class="pick-up-text">
+                            <p>useItem</p>
+                            <a href="#">lip-BoldRose-03</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,36 +110,38 @@
             <div class="news-title">
                 <h2>News</h2>
             </div>
-            <div class="news-left">
-                <div class="news-item">
-                    <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                    <div class="news-itembody">
-                        <p>exampleexampleexampleexample</p>
+            <div class="news-container">
+                <div class="news-left">
+                    <div class="news-item">
+                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                        <div class="news-itembody">
+                            <p>exampleexampleexampleexample</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                        <div class="news-itembody">
+                            <p>exampleexampleexampleexample</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                        <div class="news-itembody">
+                            <p>exampleexampleexampleexample</p>
+                        </div>
                     </div>
                 </div>
-                <div class="news-item">
-                    <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                    <div class="news-itembody">
-                        <p>exampleexampleexampleexample</p>
+                <div class="news-right">
+                    <div class="news-img">
+                        <img src="./image/portrait-1968036_1280.jpg" alt="news-img">
                     </div>
-                </div>
-                <div class="news-item">
-                    <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                    <div class="news-itembody">
-                        <p>exampleexampleexampleexample</p>
-                    </div>
-                </div>
-            </div>
-            <div class="news-right">
-                <div class="news-img">
-                    <img src="./image/portrait-1968036_1280.jpg" alt="news-img">
                 </div>
             </div>
         </section>
 
         <!-- itemlist -->
-        <div class="bg-cover">
-            <section class="itemlist" id="itemList">
+        <section class="itemlist" id="itemList">
+            <div class="itemlist-container">
                 <div class="itemlist-title">
                     <h2>Items</h2>
                 </div>
@@ -180,16 +190,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- footer -->
+                    <footer class="footer">
+                        <div class="footer-logo">
+                            <h2>Rose rose</h2>
+                        </div>
+                    </footer>
                 </div>
+        </section>
 
-                <!-- footer -->
-                <footer class="footer">
-                    <div class="footer-logo">
-
-                    </div>
-                </footer>
-            </section>
-        </div>
     </main>
 
 </body>
