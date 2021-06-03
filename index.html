@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- style -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -24,31 +28,32 @@
         <div class="header-inner">
             <div class="header-logo"></div>
 
-            <div class="heaer-right">
+            <div class="header-right">
                 <div class="drawer-icon-bars">
                     <div class="icon-bar1 drawer-icon"></div>
                     <div class="icon-bar2 drawer-icon"></div>
                     <div class="icon-bar3 drawer-icon"></div>
                 </div>
-
-                <nav class="header-nav">
-                    <div class="header-menu">
-                        <ul class="header-nav-list">
-                            <li class="header-item">
-                                <a href="#pickUp" class="header-link">PickUp</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#news" class="header-link">News</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#itemList" class="header-link">ItemList</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
+
         </div>
+        
     </header>
+    <nav class="header-nav">
+        <div class="header-menu">
+            <ul class="header-nav-list">
+                <li class="header-item">
+                    <a href="#pickUp" class="header-link">PickUp</a>
+                </li>
+                <li class="header-item">
+                    <a href="#news" class="header-link">News</a>
+                </li>
+                <li class="header-item">
+                    <a href="#itemList" class="header-link">ItemList</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="drawer-background"></div>
 
     <main>
@@ -107,33 +112,35 @@
 
         <!-- news -->
         <section class="news" id="news">
-            <div class="news-title">
-                <h2>News</h2>
-            </div>
-            <div class="news-container">
-                <div class="news-left">
-                    <div class="news-item">
-                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                        <div class="news-itembody">
-                            <p>exampleexampleexampleexample</p>
+            <div class="news-inner">
+                <div class="news-container">
+                    <div class="news-left">
+                        <div class="news-title">
+                            <h2>News</h2>
+                        </div>
+                        <div class="news-item">
+                            <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                            <div class="news-itembody">
+                                <p>exampleexampleexampleexample</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                            <div class="news-itembody">
+                                <p>exampleexampleexampleexample</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
+                            <div class="news-itembody">
+                                <p>exampleexampleexampleexample</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="news-item">
-                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                        <div class="news-itembody">
-                            <p>exampleexampleexampleexample</p>
+                    <div class="news-right">
+                        <div class="news-img">
+                            <img src="./image/portrait-1968036_1280.jpg" alt="news-img">
                         </div>
-                    </div>
-                    <div class="news-item">
-                        <p class="news-item-data"><time dataTime-="2021-06-01">2021年6月1日</time></p>
-                        <div class="news-itembody">
-                            <p>exampleexampleexampleexample</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-right">
-                    <div class="news-img">
-                        <img src="./image/portrait-1968036_1280.jpg" alt="news-img">
                     </div>
                 </div>
             </div>
@@ -141,66 +148,80 @@
 
         <!-- itemlist -->
         <section class="itemlist" id="itemList">
-            <div class="itemlist-container">
+            <div class="itemlist-inner">
                 <div class="itemlist-title">
                     <h2>Items</h2>
                 </div>
-                <div class="itemlist-container">
-                    <div class="itemlist-item">
-                        <div class="item-img">
-                            <img src="./image/lips.jpg" alt="lips">
+                <div class="swiper-container">
+                    <div class="itemlist-container swiper-wrapper">
+                        <div class="itemlist-item swiper-slide">
+                            <div class="item-img">
+                                <img src="./image/lips.jpg" alt="lips">
+                            </div>
+                            <div class="item-text">
+                                <h3>Lips</h3>
+                                <div class="item-button">
+                                    <a href="#">More</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item-text">
-                            <h3>Lips</h3>
-                            <div class="item-button">
-                                <a href="#">More</a>
+                        <div class="itemlist-item swiper-slide">
+                            <div class="item-img">
+                                <img src="./image/eyeshadow.jpg" alt="eyeshadow">
+                            </div>
+                            <div class="item-text">
+                                <h3>Eyeshadows</h3>
+                                <div class="item-button">
+                                    <a href="#">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemlist-item swiper-slide">
+                            <div class="item-img">
+                                <img src="./image/manicure.jpg" alt="nail-polish">
+                            </div>
+                            <div class="item-text">
+                                <h3>Nail polishes</h3>
+                                <div class="item-button">
+                                    <a href="#">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemlist-item swiper-slide">
+                            <div class="item-img">
+                                <img src="./image/liner.jpg" alt="liner">
+                            </div>
+                            <div class="item-text">
+                                <h3>Eyeliner</h3>
+                                <div class="item-button">
+                                    <a href="#">More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="itemlist-item">
-                        <div class="item-img">
-                            <img src="./image/eyeshadow.jpg" alt="eyeshadow">
-                        </div>
-                        <div class="item-text">
-                            <h3>Eyeshadows</h3>
-                            <div class="item-button">
-                                <a href="#">More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="itemlist-item">
-                        <div class="item-img">
-                            <img src="./image/manicure.jpg" alt="nail-polish">
-                        </div>
-                        <div class="item-text">
-                            <h3>Nail polishes</h3>
-                            <div class="item-button">
-                                <a href="#">More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="itemlist-item">
-                        <div class="item-img">
-                            <img src="./image/liner.jpg" alt="liner">
-                        </div>
-                        <div class="item-text">
-                            <h3>Eyeliner</h3>
-                            <div class="item-button">
-                                <a href="#">More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- footer -->
-                    <footer class="footer">
-                        <div class="footer-logo">
-                            <h2>Rose rose</h2>
-                        </div>
-                    </footer>
+                    <div class="swiper-pagination"></div>
                 </div>
+            </div>
         </section>
 
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-logo">
+                <h2>Rose rose</h2>
+            </div>
+        </footer>
+
     </main>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 
 </body>
 
