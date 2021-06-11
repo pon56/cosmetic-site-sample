@@ -11,3 +11,11 @@ const swiper = new Swiper('.swiper-container', {
       clickable: true
     },
   });
+
+  // ナビバー
+  $('.nav-opener').on('click', function(){
+    $('.navbar-links').fadeToggle();
+    $('.fa-caret-down').toggleClass('active')
+  });
+
+  // 100スクロールでオパシティ付与
